@@ -1,0 +1,52 @@
+
+.banner{
+    width: 1440px;
+    height: 600px;
+    background-color: #A1E2EB;
+    margin-bottom: 40px;
+}
+
+.subtitle_categories{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 386px;
+    height: 52px;
+}
+
+.categories-fotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 393px;
+    gap: 32px;
+    width: 1378px;
+    margin-bottom: 112px;
+}
+
+.categories-fotos>div{
+    width: 318px;
+    height: 350px;
+    border: 2px solid black;
+}
+
+.discount{
+    width: 1440px;
+    height: 476px;
+    background-color: #339933;
+    margin-bottom: 49px;
+}
+
+.promo_actions-fotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 366px;
+    gap: 35px;
+    width: 1024px;
+    margin-bottom: 171px;
+}
+
+.promo_actions-fotos>div{
+    width: 318px;
+    height: 366px;
+    border: 2px solid black;
+}

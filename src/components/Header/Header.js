@@ -1,14 +1,20 @@
 import './Header.css'
+import logo from '../Images/svg/header_logo.svg'
+import shopping_bag from "../Images/svg/icon-shopping_bag.svg"
+import { useNavigate } from 'react-router-dom'
 
 function Header() {
+
+    let navigate = useNavigate
+
     return(
         <header className='header_wrapper'>
             <div className="header_logo">
                 <a href="/" className="header_logo-link">
-                    <img src="./img/svg/header_logo.svg" alt="Logo" className="header_logo-pic"/>
+                    <img src={logo} alt="logo" className="header_logo-pic"/>
                 </a>
             </div>
-            <button type="submit" className="header_button">Catalogue</button>
+            <button type="submit" className="header_button" onClick={()=> navigate('categories/all')}>Catalogue</button>
             <nav className="header_nav">
                 <ul className='header_list'>
                     <li className="header_list_item">
@@ -25,7 +31,7 @@ function Header() {
                     </li>
                     <li className="header_list_item">
                         <a href='/bag_icon'>
-                            <img src="./img/svg/icon-shopping_bag.svg" alt="Icon" className="header_shopping-bag"/>
+                            <img src={shopping_bag} alt="icon" className="header_shopping-bag"/>
                         </a>
                     </li>
                 </ul>

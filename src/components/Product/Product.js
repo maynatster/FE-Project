@@ -1,6 +1,6 @@
-import './Items.css'
+import './Product.css'
 
-function Items() {
+function Product() {
     return(
         <div>
             123
@@ -8,4 +8,4 @@ function Items() {
     )
 }
 
-export default Items
+export default Product

@@ -1,27 +1,24 @@
 import './Main.css'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import banner_pic from '../Images/svg/banner_pic.svg'
 
 
 function Main() {
 
     let navigate = useNavigate()
-    let forwardsite = () => navigate(1)
+    // let forwardsite = () => navigate(1)
 
     return(
         <main>
             <div className="banner">
-                <h1>New season sales</h1>
-                <button type="button" className="banner_button1">All promo actions</button>
-                <button type="button" className="banner_button2">Details</button>
+                <h1 className='banner_title'>New season sales</h1>
+                <button type="submit" className="banner_button1">All promo actions</button>
+                <button type="submit" className="banner_button2">Details</button>
+                <img src={banner_pic} alt='banner' className='banner_pic'/>
             </div>
             <div className='subtitle_categories'>
-            <h2>Categories</h2>
-            <button type="button" className="subtitle_button" onClick={()=> forwardsite()}>All categories</button>
-            <div>
-                <Link to={`categories`}>
-                    Categories
-                </Link>
-            </div>
+            <h2 className='subtitle_categories-black'>Categories</h2>
+            <button type="button" className="subtitle_button" onClick={()=> navigate('categories')}>All categories</button>
             </div>
             <div className='categories-fotos'>
                 <div>1</div>
@@ -40,7 +37,6 @@ function Main() {
                 <div>2</div>
                 <div>3</div>
             </div>
-
         </main>
     )
 }

@@ -1,25 +1,24 @@
-import Goods from "../Goods/Goods"
+import Product from "../Product/Product"
 import Header from "../Header/Header"
 import NotFound from "../NotFound/NotFound"
 import './App.css'
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import Main from "../Main/Main"
 import Footer from "../Footer/Footer"
-import Categories from "../Categories/Categories"
-import Home from "../Home/Home"
-
+import CategoriesList from "../CategoriesList/CategoriesList"
+import Category from "../Category/Category"
 
 function App() {
+
     return(
         <div>
             <Header/>
-            <Router>
                 <Routes>
-                    <Route path="/main" element = {<Main/>}/>
-                    <Route path="*" element = {<NotFound/>}/>
+                    <Route path="/" element = {<Main/>}/>
+                    <Route path="/categories" element = {<CategoriesList/>}/>             
+                    <Route path="/categories/:id" element = {<Category/>}/>
+                    <Route path="/products/:id" element = {<div>Product profile</div>}/>
                 </Routes>
-            </Router>
-            {/* <Main/> */}
             <Footer/>
         </div>
     )

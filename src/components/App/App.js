@@ -2,7 +2,7 @@ import Product from "../Product/Product"
 import Header from "../Header/Header"
 import NotFound from "../NotFound/NotFound"
 import './App.css'
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import { Routes, Route, Link} from 'react-router-dom'
 import Main from "../Main/Main"
 import Footer from "../Footer/Footer"
 import CategoriesList from "../CategoriesList/CategoriesList"

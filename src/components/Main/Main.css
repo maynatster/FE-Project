@@ -15,14 +15,27 @@
     font-style: normal;
     font-weight: 700;
     font-size: 80px;
-    line-height: 130%;
+    line-height: 104px;
     color: white;
     width: 540px;
     height: 104px;
     align-self: flex-start;
     margin-top: 130px;
     margin-left: 50px;
-    
+    margin-bottom: 3px;
+}
+
+.banner_title2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 63px;
+    line-height: 82px;
+    color: white;
+    align-self: flex-start;
+    margin-top: 237px;
+    margin-left: 50px;
+    position: absolute;
 }
 
 .banner_button1{
@@ -41,6 +54,7 @@
     position: absolute;
     margin-top: 379px;
     margin-left: 51px;
+    cursor: pointer;
 }
 
 .banner_button2{
@@ -59,6 +73,7 @@
     position: absolute;
     margin-top: 379px;
     margin-left: 332px;
+    cursor: pointer;
 }
 
 .subtitle_categories{
@@ -92,6 +107,7 @@
     font-size: 12px;
     line-height: 130%;
     letter-spacing: 3%;
+    cursor: pointer;
 }
 
 .categories-fotos{
@@ -109,13 +125,6 @@
     border: 2px solid black;
 }
 
-.discount{
-    width: 1440px;
-    height: 476px;
-    background-color: #339933;
-    margin-bottom: 49px;
-}
-
 .promo_actions-fotos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -129,4 +138,88 @@
     width: 318px;
     height: 366px;
     border: 2px solid black;
+    margin-bottom: 170px;
+}
+
+.discount_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    height: 476px;
+    background-color: #339933;
+    margin-bottom: 49px;
+}
+
+.gnome_pic{
+    width: 422px;
+    height: 422px;
+    margin-top: 27px;
+    margin-left: 91px;
+    margin-bottom: 27px;
+}
+
+.discount_input_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 44px;
+    margin-right: 152px;
+    width: 575px;
+    height: 387px;
+}
+
+.discount_title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 108px;
+    letter-spacing: 3%;
+    color: white;
+}
+
+.discount_title2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 3%;
+    color: white;
+    margin-bottom: 46px;
+}
+
+.input_phone{
+    width: 473px;
+    height: 75.5px;
+    border: none;
+    border-radius: 25.15px;
+    background-color: white;
+    color: #6C6C6C;
+    margin-bottom: 30.5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: 3%;
+}
+
+.discount_button{
+    width: 473px;
+    height: 75.5px;
+    border: 2.4px solid white;
+    border-radius: 25.15px;
+    background-color: #339933;
+    color: white;
+    margin-bottom: 45.5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28.74px;
+    line-height: 34.5px;
+    letter-spacing: 3%;
+
 }

@@ -1,9 +1,12 @@
+
 .footer_wrapper{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 1348px;
     height: 275px;
+    margin-left: 30px;
+    margin-bottom: 26px;
 }
 
 .contacts_title{
@@ -11,8 +14,9 @@
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
-    line-height: 130%;
+    line-height: 52px;
     color: black;
+    margin-bottom: 25px;
 }
 
 .phone_number{
@@ -20,8 +24,9 @@
     font-style: normal;
     font-weight: 600;
     font-size: 70px;
-    line-height: 130%;
+    line-height: 91px;
     color: black;
+    margin-bottom: 30px;
 }
 
 .address_title{
@@ -29,19 +34,21 @@
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
-    line-height: 130%;
+    line-height: 52px;
     color: black;
+    margin-bottom: 25px;
 }
 
 .address_details{
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 52px;
-    line-height: 130%;
+    line-height: 52px;
     color: black;
     width: 536px;
     height: 104px;
+    margin-bottom: 20px;
 }
 
 .opening_hours{
@@ -49,8 +56,9 @@
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 130%;
+    line-height: 23px;
     color: black;
+    margin-bottom: 2px;
 }
 
 .opening_hours2{
@@ -58,7 +66,38 @@
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    line-height: 130%;
+    line-height: 31px;
     color: black;
+}
 
+.social_media{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 196px;
+    height: 77px;
+}
+
+.instagram{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    color: black;
+    margin-top: 8px;
+}
+
+.whatsapp{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    color: black;
+    margin-top: 8px;
+}
+
+.insta_icon, .whatsapp_icon{
+    text-decoration: none;
 }

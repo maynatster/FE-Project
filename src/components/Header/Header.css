@@ -27,7 +27,7 @@ html, body{
     padding: 14px 30px 15px 30px;
     border: 2px solid #339933;
     border-radius: 5px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -40,13 +40,14 @@ html, body{
 .header_button:hover,
 .header_button:focus,
 .header_button:active {
-    opacity: 0.75;
+    opacity: 0.9;
+    font-weight: 800;
 }
 
 .header_logo-pic:hover,
 .header_logo-pic:focus,
 .header_logo-pic:active {
-    opacity: 0.75;
+    opacity: 0.9;
 }
 
 .header_list{
@@ -65,9 +66,9 @@ html, body{
 }
 
 .header_link {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 21px;
     color: #000000;
@@ -77,5 +78,7 @@ html, body{
 .header_link:hover,
 .header_link:focus,
 .header_link:active {
-  opacity: 0.75;
+  color: #339933;
+  font-weight: 600;
+  transition: 0.1s;
 }

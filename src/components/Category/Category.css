@@ -3,3 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.price_sorting{
+    width: 1024px;
+    height: 42px;
+    margin-left: 30px;
+    margin-bottom: 46px;
+    background-color: aqua;
+}
+
+.category_wrapper{
+    width: 1377px;
+    height: 100%;
+    margin-left: 30px;
+    margin-bottom: 56px;
+    display: grid;
+    grid-template-columns: 318px 318px 318px 318px;
+    grid-template-rows: 366px 366px;
+    column-gap: 35px;
+    row-gap: 56px;
+}

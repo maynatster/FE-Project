@@ -1,9 +1,6 @@
 import { baseUrl } from ".."
 import { getCategoriesAction } from "../store/categoriesListReducer"
 
-
-
-
 export const fetchCategoriesList = () => {
     return function (dispatch){
         fetch(baseUrl + '/categories/all')
@@ -11,4 +8,3 @@ export const fetchCategoriesList = () => {
             .then(data => dispatch(getCategoriesAction(data)))
     }
 }
-

@@ -3,7 +3,7 @@ import './Product.css'
 function Product() {
     return(
         <div>
-            123
+            Product profile
         </div>
     )
 }

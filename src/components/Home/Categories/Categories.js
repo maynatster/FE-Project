@@ -1,11 +1,11 @@
+import './Categories.css'
+import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { useEffect } from "react"
-import { fetchCategoriesList } from "../../asyncActions/categoriesFetch"
-import { baseUrl } from '../..'
-import { Link } from 'react-router-dom'
-import './CategoriesList.css'
+import { useEffect } from 'react'
+import { fetchCategoriesList } from '../../../asyncActions/categoriesFetch'
+import { baseUrl } from '../../..'
 
-function CategoriesList() {
+function Categories() {
     const categories = useSelector(store => store.categoriesList.categoriesList)
     const dispatch = useDispatch()
 
@@ -13,10 +13,15 @@ function CategoriesList() {
         dispatch(fetchCategoriesList())
     }, [dispatch])
 
+    let navigate = useNavigate()
 
     return(
         <div>
-            <h2 className='categories-subtitle'>Categories</h2>
+            <div className='subtitle_categories'>
+                <h2 className='subtitle_categories-black'>Categories</h2>
+                <button type="button" className="subtitle_button" onClick={()=> navigate('categories')}>All categories</button>
+            </div>
+            
             <div className='categories_wrapper'>
                 {categories.map(elem =>
                 <Link className='categories_link-style' key={elem.id} to={`/categories/${elem.id}`}>
@@ -31,4 +36,4 @@ function CategoriesList() {
     )
 }
 
-export default CategoriesList
+export default Categories

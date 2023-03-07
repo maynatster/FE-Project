@@ -2,11 +2,16 @@ import Product from "../Product/Product"
 import Header from "../Header/Header"
 import NotFound from "../NotFound/NotFound"
 import './App.css'
-import { Routes, Route, Link} from 'react-router-dom'
-import Main from "../Main/Main"
+import { Routes, Route } from 'react-router-dom'
 import Footer from "../Footer/Footer"
 import CategoriesList from "../CategoriesList/CategoriesList"
 import Category from "../Category/Category"
+import "@fontsource/montserrat";
+import Banner from "../Home/Banner/Banner"
+import Categories from "../Home/Categories/Categories"
+import Discount from "../Home/Discount/Discount"
+import Promo from "../Home/Promo/Promo"
+
 
 function App() {
 
@@ -14,10 +19,16 @@ function App() {
         <div>
             <Header/>
                 <Routes>
-                    <Route path="/" element = {<Main/>}/>
+                    <Route path="/" element = {<main>
+                        <Banner/>
+                        <Categories/>
+                        <Discount/>
+                        <Promo/>
+                    </main>}/>
                     <Route path="/categories" element = {<CategoriesList/>}/>             
                     <Route path="/categories/:id" element = {<Category/>}/>
-                    <Route path="/products/:id" element = {<div>Product profile</div>}/>
+                    <Route path="/products/:id" element = {<Product/>}/>
+                    <Route path="*" element = {<NotFound/>}/>
                 </Routes>
             <Footer/>
         </div>

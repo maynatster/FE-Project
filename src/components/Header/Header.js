@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 
 function Header() {
 
-    let navigate = useNavigate
+    let navigate = useNavigate()
 
     return(
         <header className='header_wrapper'>

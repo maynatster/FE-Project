@@ -5,6 +5,7 @@ import { baseUrl } from "../.."
 import { fetchCategoriesList } from "../../asyncActions/categoriesFetch"
 import { fetchProductsList } from "../../asyncActions/products"
 import { Link } from 'react-router-dom'
+import './Category.css'
 
 function Category() {
     const {id} = useParams()
@@ -16,19 +17,23 @@ function Category() {
         dispatch(fetchProductsList(id))
         dispatch(fetchCategoriesList())
 
-    }, [])
+    }, [dispatch, id])
     return(
         <div>
-            <h1>{(id != 'all') ? category?.title : 'All products'}</h1>
-            {products.map(elem =>
-                <div key={elem.id}>
-                    <img width={150} height={150} src={baseUrl + elem.image}/> 
-                    <Link to={`/products/${elem.id}`}>
-                    <p>{elem.title}</p>
-                    </Link>
-                    <p>{elem.price}</p>
-                </div>
-            )}
+            <h1>{(id !== 'all') ? category?.title : 'All products'} Category title</h1>
+            <div className="price_sorting"></div>
+            <div className="category_wrapper">
+                {products.map(elem =>
+                    <div key={elem.id}>
+                        <img width={318} height={276} alt={''} src={baseUrl + elem.image}/> 
+                        <p>{elem.price}</p>
+                        <p>{elem.discont_price}</p>
+                        <Link to={`/products/${elem.id}`}>
+                        <p>{elem.title}</p>
+                        </Link>
+                    </div>
+                )}
+            </div>
         </div>
     )
 }

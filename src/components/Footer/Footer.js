@@ -18,7 +18,6 @@ function Footer() {
                             <img src={whatsapp} alt="whatsapp" className="whatsapp-icon-pic"/>
                             <p className='whatsapp'>WhatsApp</p>
                         </a>
-
                     </div>
                 </div>
                 <div className='address'>

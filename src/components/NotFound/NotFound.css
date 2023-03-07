@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.not_found-pic{
+    width: 700px;
+    height: 700px;
+}
+
+.not_found-page{
+    margin-top: 80px;
+    margin-bottom: 150px;
+    margin-left: 350px;
+}
